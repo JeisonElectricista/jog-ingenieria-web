@@ -52,6 +52,17 @@
             padding: 15px;
             margin-top: 20px;
         }
+        .trabajo-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        .trabajo-caption {
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 5px;
+        }
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
@@ -64,19 +75,21 @@
 </head>
 <body>
     <header>
-        <img src="logo.png.png" alt="Logo JOG" class="logo"> <!-- Asegúrate de que el logo está en la misma carpeta -->
+        <img src="logo.png" alt="Logo JOG" class="logo"> <!-- Asegúrate de que el logo está en la misma carpeta -->
         <h1>JOG Ingeniería y Soluciones Eléctricas</h1>
     </header>
     <section>
         <h2>Soluciones eléctricas para tu hogar y empresa</h2>
         <p>Brindamos servicios de instalación, mantenimiento y diseño eléctrico con calidad y seguridad.</p>
-        <a href="#contacto" class="btn">Contáctanos</a>
-        <a href="#trabajos" class="btn">Trabajos Realizados</a> <!-- Nuevo botón -->
+        <a href="#trabajos" class="btn">Trabajos Realizados</a>
     </section>
     
     <section id="trabajos">
         <h2>Nuestros Trabajos</h2>
-        <p>Aquí puedes ver algunos de nuestros proyectos realizados. </p>
+        <img src="Trabajo1.png" alt="Trabajo realizado en finca" class="trabajo-img">
+        <p class="trabajo-caption">Trabajo Realizado en Finca, Sector la Manuela</p>
+        <img src="Trabajo2.png" alt="Trabajo realizado en finca" class="trabajo-img">
+        <p class="trabajo-caption">Trabajo Realizado en Finca, Sector la Manuela</p>
     </section>
     
     <section id="ubicacion">
@@ -88,7 +101,6 @@
         <h2>Contacto</h2>
         <p>Email: jeison.electricista@gmail.com</p>
         <p>Teléfono: +57 318 348 0198</p>
-        <p>Whatsapp: +57 318 348 0198</p>
         <p>Instagram: <a href="https://instagram.com/jeison_electricista" target="_blank">@jeison_electricista</a></p>
     </section>
     
