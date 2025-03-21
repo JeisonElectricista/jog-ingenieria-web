@@ -16,36 +16,58 @@
             background-color: #00274D;
             color: white;
             padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
         }
         .logo {
-            max-width: 200px;
+            max-width: 100px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        h1 {
+            animation: slideIn 1.5s ease-in-out;
         }
         section {
-            padding: 20px;
+            padding: 40px 20px;
         }
         .btn {
             background-color: #FFD700;
             color: #00274D;
-            padding: 10px 20px;
+            padding: 15px 30px;
             text-decoration: none;
             display: inline-block;
-            margin-top: 10px;
+            margin-top: 20px;
             border-radius: 5px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #FFC107;
         }
         footer {
             background-color: #00274D;
             color: white;
-            padding: 10px;
+            padding: 15px;
             margin-top: 20px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
         }
     </style>
 </head>
 <body>
     <header>
+        <img src="logo.png" alt="Logo JOG" class="logo">
         <h1>JOG Ingeniería y Soluciones Eléctricas</h1>
     </header>
     <section>
-        <img src="logo.png" alt="Logo JOG" class="logo">
         <h2>Soluciones eléctricas para tu hogar y empresa</h2>
         <p>Brindamos servicios de instalación, mantenimiento y diseño eléctrico con calidad y seguridad.</p>
         <a href="#contacto" class="btn">Contáctanos</a>
@@ -53,7 +75,7 @@
     <section id="contacto">
         <h2>Contacto</h2>
         <p>Email: jeison.electricista@gmail.com</p>
-        <p>Teléfono: +57 XXXXXXXXXX</p>
+        <p>Teléfono: +57 318 348 0198</p>
     </section>
     <footer>
         <p>&copy; 2025 JOG Ingeniería y Soluciones Eléctricas</p>
